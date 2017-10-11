@@ -264,6 +264,9 @@ var isEnd = function () {
 
 //顶部被填充，游戏结束
 var storage = window.localStorage;
+if (storage.highest == undefined) {
+	storage.height = 0;
+}
 document.getElementById('highest').innerText = storage.highest
 var gameOver = function () {
 	if(context[0].some(function (args) {
