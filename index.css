@@ -1,0 +1,49 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	overflow: hidden;
+	margin:100px;
+	width:600px;
+}
+.box,.aside{
+	float:left;
+}
+.box{
+	position: relative;
+	border:1px solid black;
+	background:skyblue;
+	width:200px;
+	height:400px;
+	margin-right:10px;
+}
+#next{
+	position: relative;
+	background: skyblue;
+	width:80px;
+	height:80px;
+	border:1px solid black;	
+}
+.none,.current,.done{
+	width:20px;
+	height:20px;
+	box-sizing: border-box;
+	position: absolute;
+}
+.none{
+	background:skyblue;
+}
+.current{
+	background:pink;
+	border:1px solid red;
+}
+.done{
+	background:gray;
+	border:1px solid black;
+}
+button{
+	width:100px;
+	padding:10px;
+	text-align: center;
+}
